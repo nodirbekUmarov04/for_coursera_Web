@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.box-section {
+    float: left;
+    border: 1px black solid;
+    height: 300px;
+    margin: 1%;
+    background-color: #a3c4dc;
+    position: relative;
+    overflow: auto;
+}
+
+.title-thing {
+    border: 1px black solid;
+    height: 64px;
+    width: 45%;
+    position: relative;
+    left: 55%;
+    text-align: center;
+    overflow: auto;
+}
+
+.OliveDrab {
+    background-color: #87a96b;
+}
+
+.LightCoral { 
+    background-color: #f08080;
+}
+
+.SteelBlue { 
+    background-color: #4682b4;
+    color: white;
+}
+
+p {
+    padding: 1%;
+}
+
+h1 {
+    font-size: 175%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 125%;
+}
+
+@media (min-width: 992px) {
+    .box-section {
+        width: 31.333%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .box-section {
+        width: 48%;
+    }
+    .box-section:last-child {
+        width: 98%;
+    }
+}
+
+@media (max-width: 767px) {
+    .box-section {
+        width: 98%;
+    }
+}
